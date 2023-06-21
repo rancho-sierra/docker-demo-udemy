@@ -11,7 +11,7 @@ node {
      myTestContainer.inside {
        sh 'npm install --only=dev'
        sh 'npm test'
-       sudo chown -R 113:123 "/.npm
+       chown -R 113:123 "/.npm
      }
    }
    stage('test with a DB') {
